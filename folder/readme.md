@@ -23,7 +23,7 @@ Este é o Modelo Entidade-Relacionamento (MER) feito para o banco de dados da no
 * Entrega: Essa entidade armazena informações sobre o processo de entrega dos pedidos. Cada entrega está vinculada a um pedido e possui dados como o código de rastreamento, endereço de entrega e data estimada de entrega.  
 * Transportadora: Representa as empresas de transporte que fornecem serviços de entrega para nossos pedidos. Cada transportadora é identificada por um "transportadora_id" exclusivo e possui informações como nome, CNPJ e telefone de contato.  
 
-#### Relacionamentos:
+#### Alguns dos relacionamentos descritos no modelo:
 * Cliente -> Pedido: Cada cliente pode realizar vários pedidos na loja. Essa relação é representada pelo relacionamento um-para-muitos entre as entidades "Cliente" e "Pedido". Um cliente pode estar associado a vários pedidos, mas cada pedido pertence a apenas um cliente.
 
 * Pedido -> Produto: Cada pedido é composto por vários produtos. Essa relação é representada pelo relacionamento muitos-para-muitos entre as entidades "Pedido" e "Produto". Um pedido pode conter vários produtos, e um produto pode estar presente em vários pedidos.
